@@ -1,4 +1,4 @@
-package com.zyx.utils;
+package com.ryx.utils;
 
 import android.text.Html;
 import android.view.View;
@@ -9,7 +9,7 @@ import java.util.Date;
 
 /**
  * TextView 的 setText 工具
- * Created by rxy on 2020/1/20.
+ * Created by ryx on 2020/1/20.
  */
 public class TextViewUtil {
     /**

@@ -1,4 +1,4 @@
-package com.zyx.widget;
+package com.ryx.widget;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

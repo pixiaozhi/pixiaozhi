@@ -1,4 +1,4 @@
-package com.zyx.utils;
+package com.ryx.utils;
 
 import android.content.Context;
 import android.content.Intent;
@@ -20,7 +20,7 @@ import java.net.URLConnection;
 
 /**
  * SaveImageUtils
- * Created by rxy on 2020/1/20.
+ * Created by ryx on 2020/1/20.
  */
 public class SaveImageUtils {
 

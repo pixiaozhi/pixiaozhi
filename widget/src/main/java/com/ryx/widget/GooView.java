@@ -1,4 +1,4 @@
-package com.zyx.widget;
+package com.ryx.widget;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -18,11 +18,11 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.OvershootInterpolator;
 
-import com.zyx.utils.GeometryUtils;
+import com.ryx.utils.GeometryUtils;
 
 /**
  * GooView
- * Created by rxy on 2020/1/20.
+ * Created by ryx on 2020/1/20.
  * 贝塞尔曲线
  */
 

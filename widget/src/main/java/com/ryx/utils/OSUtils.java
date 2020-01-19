@@ -1,4 +1,4 @@
-package com.zyx.utils;
+package com.ryx.utils;
 
 import android.os.Build;
 import android.text.TextUtils;
@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 
 /**
  *  OSUtils
- *  Created by rxy on 2020/1/20.
+ *  Created by ryx on 2020/1/20.
  *  手机OS工具
  */
 public class OSUtils {

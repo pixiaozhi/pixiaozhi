@@ -1,10 +1,10 @@
-package com.zyx.utils;
+package com.ryx.utils;
 
 import android.graphics.PointF;
 
 /**
  * GeometryUtils
- * Created by rxy on 2020/1/20.
+ * Created by ryx on 2020/1/20.
  * 几何图形工具
  */
 

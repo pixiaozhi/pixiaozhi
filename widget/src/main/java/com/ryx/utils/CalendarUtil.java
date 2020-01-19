@@ -1,4 +1,4 @@
-package com.zyx.utils;
+package com.ryx.utils;
 
 import android.text.TextUtils;
 import android.widget.TextView;
@@ -11,7 +11,7 @@ import java.util.GregorianCalendar;
 
 /**
  * 日期工具类
- * Created by rxy on 2020/1/20.
+ * Created by ryx on 2020/1/20.
  */
 public class CalendarUtil {
     public static final String Y = "yyyy";
