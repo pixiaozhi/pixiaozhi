@@ -31,7 +31,8 @@ TextDrawable 可设置图片+文字的TextView，在布局文件中设置文字�
         app:leftDrawableWidth="20dp"/>
 	
 标签列表控件。可以设置标签的选中效果。 可以设置标签的选中类型：不可选中、单选、限数量多选和不限数量多选等， 并支持设置必选项、单行显示、最大显示行数等功能。
-<com.ryx.widget.LabelsView
+
+	<com.ryx.widget.LabelsView
        android:id="@+id/labels"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
@@ -50,9 +51,9 @@ TextDrawable 可设置图片+文字的TextView，在布局文件中设置文字�
        app:minSelect="1"   //标签的最少选择数量，只有多选的时候才有用，0为不限数量
        app:isIndicator="true" />   //设置为指示器模式，不能手动改变标签的选中状态
 
-<!-- 其他属性 -->
-app:labelTextWidth="wrap_content"  // 标签项宽
-app:labelTextHeight="wrap_content"  // 标签项高
-app:labelGravity="center"  // 标签项的文本显示方向
-app:labelTextPadding="5dp"  // 标签的Padding
-app:singleLine="true"  // 单行显示，默认false
+	<!-- 其他属性 -->
+	app:labelTextWidth="wrap_content"  // 标签项宽
+	app:labelTextHeight="wrap_content"  // 标签项高
+	app:labelGravity="center"  // 标签项的文本显示方向
+	app:labelTextPadding="5dp"  // 标签的Padding
+	app:singleLine="true"  // 单行显示，默认false
