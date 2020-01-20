@@ -18,8 +18,8 @@ Step 2. Add the dependency
 	}
 
 ------------------------------------------------------------------------
-已上传文件（未发布）
-TextDrawable 可设置图片+文字的TextView，在布局文件中设置文字左边图宽高，同理可设置rightDrawable，topDrawable
+已上传文件（暂未打包发布）
+TextDrawable 可设置图片+文字的TextView，在布局文件中设置文字左边图宽高，同理可设置rightDrawable，topDrawable，bottomDrawable
 
 	<com.ryx.widget.TextDrawable
         android:layout_width="match_parent"
