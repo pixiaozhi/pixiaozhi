@@ -57,3 +57,17 @@ TextDrawable 可设置图片+文字的TextView，在布局文件中设置文字�
 	app:labelGravity="center"  // 标签项的文本显示方向
 	app:labelTextPadding="5dp"  // 标签的Padding
 	app:singleLine="true"  // 单行显示，默认false
+	
+activity调用：
+	LabelsView mLabels = new LabelsView(activity);
+
+        mLabels.setSelectType(LabelsView.SelectType.SINGLE)//单选,可以反选。
+        .setIndicator(false)//设置为指示器模式，只能看
+        .setLabelBackgroundResource(R.drawable.labels_bg)//标签背景
+        .setLabelTextColor(R.drawable.label_text_color)//文字颜色
+        .setLabelTextSize(ScreenUtil.dip2px(16))
+        .setLabelTextPadding(px_10, px_10, px_10, px_10)
+        .setWordMargin(px_5)
+        .setLineMargin(px_5)
+        .setMaxLines(ScreenUtil.dip2px(3))
+        .setPadding(px_15, px_15, px_15, px_15);
