@@ -1,4 +1,4 @@
-package com.ryx.widget;
+package com.ryx.widget.bubble;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

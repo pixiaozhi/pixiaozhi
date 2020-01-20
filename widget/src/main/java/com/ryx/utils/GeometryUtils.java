@@ -1,6 +1,11 @@
 package com.ryx.utils;
 
+import android.content.Context;
 import android.graphics.PointF;
+import android.graphics.Rect;
+import android.util.DisplayMetrics;
+import android.util.TypedValue;
+import android.view.View;
 
 /**
  * GeometryUtils
@@ -82,4 +87,45 @@ public class GeometryUtils {
 
         return points;
     }
+
+    /**
+     * dip 转换成 px
+     *
+     * @param dip
+     * @param context
+     * @return
+     */
+    public static float dip2Dimension(float dip, Context context) {
+        DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
+        return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dip, displayMetrics);
+    }
+
+    /**
+     * 获取状态栏高度
+     *
+     * @param v
+     * @return
+     */
+    public static int getStatusBarHeight(View v) {
+        if (v == null) {
+            return 0;
+        }
+        Rect frame = new Rect();
+        v.getWindowVisibleDisplayFrame(frame);
+        return frame.top;
+    }
+
+    public static int calcStatusBarHeight(Context context) {
+        int statusHeight = -1;
+        try {
+            Class<?> clazz = Class.forName("com.android.internal.R$dimen");
+            Object object = clazz.newInstance();
+            int height = Integer.parseInt(clazz.getField("status_bar_height").get(object).toString());
+            statusHeight = context.getResources().getDimensionPixelSize(height);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return statusHeight;
+    }
+
 }

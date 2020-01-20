@@ -9,10 +9,10 @@ import android.widget.FrameLayout;
  * 播放爆炸动画的layout
  */
 
-public class BubbleLayout extends FrameLayout {
+public class GooViewAnimLayout extends FrameLayout {
     Context context;
 
-    public BubbleLayout(Context context) {
+    public GooViewAnimLayout(Context context) {
         super(context);
         this.context = context;
     }
