@@ -59,8 +59,8 @@ TextDrawable 可设置图片+文字的TextView，在布局文件中设置文字�
 	app:singleLine="true"  // 单行显示，默认false
 	
 activity调用：
-	LabelsView mLabels = new LabelsView(activity);
 
+	LabelsView mLabels = new LabelsView(activity);
         mLabels.setSelectType(LabelsView.SelectType.SINGLE)//单选,可以反选。
         .setIndicator(false)//设置为指示器模式，只能看
         .setLabelBackgroundResource(R.drawable.labels_bg)//标签背景
