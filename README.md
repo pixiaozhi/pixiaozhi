@@ -74,9 +74,9 @@ activity调用：
         .setIndicator(false)                               //设置为指示器模式，只能看
         .setLabelBackgroundResource(R.drawable.labels_bg)  //标签背景
         .setLabelTextColor(R.drawable.label_text_color)    //文字颜色
-        .setLabelTextSize(px_16)	                   //文字大小，这里px_5是ScreenUtil.dip2px(16)，以下同理
+        .setLabelTextSize(px_16)                           //文字大小，这里px_5是ScreenUtil.dip2px(16)，以下同理
         .setLabelTextPadding(px_10, px_10, px_10, px_10)   //文字边距
-        .setWordMargin(px_5)			           //文字内容Margin
-        .setLineMargin(px_5)				   //行Margin
-        .setMaxLines(px_5);				   //最大行数
+        .setWordMargin(px_5)                               //文字内容Margin
+        .setLineMargin(px_5)                               //行Margin
+        .setMaxLines(px_5);                                //最大行数
         
