@@ -15,12 +15,15 @@ public class TextDrawable extends android.support.v7.widget.AppCompatTextView {
     private Drawable drawableLeft;
     private Drawable drawableRight;
     private Drawable drawableTop;
+    private Drawable drawableBottom;
     private int leftWidth;
     private int rightWidth;
     private int topWidth;
+    private int bottomWidth;
     private int leftHeight;
     private int rightHeight;
     private int topHeight;
+    private int bottomHeight;
     private Context mContext;
 
     public TextDrawable(Context context) {
@@ -46,6 +49,7 @@ public class TextDrawable extends android.support.v7.widget.AppCompatTextView {
         drawableLeft = typedArray.getDrawable(R.styleable.TextDrawable_leftDrawable);
         drawableRight = typedArray.getDrawable(R.styleable.TextDrawable_rightDrawable);
         drawableTop = typedArray.getDrawable(R.styleable.TextDrawable_topDrawable);
+        drawableBottom = typedArray.getDrawable(R.styleable.TextDrawable_bottomDrawable);
         if (drawableLeft != null) {
             leftWidth = typedArray.getDimensionPixelOffset(R.styleable.TextDrawable_leftDrawableWidth, dip2px(context, 20));
             leftHeight = typedArray.getDimensionPixelOffset(R.styleable.TextDrawable_leftDrawableHeight, dip2px(context, 20));
@@ -57,6 +61,10 @@ public class TextDrawable extends android.support.v7.widget.AppCompatTextView {
         if (drawableTop != null) {
             topWidth = typedArray.getDimensionPixelOffset(R.styleable.TextDrawable_topDrawableWidth, dip2px(context, 20));
             topHeight = typedArray.getDimensionPixelOffset(R.styleable.TextDrawable_topDrawableHeight, dip2px(context, 20));
+        }
+        if (drawableBottom != null) {
+            bottomWidth = typedArray.getDimensionPixelOffset(R.styleable.TextDrawable_bottomDrawableWidth, dip2px(context, 20));
+            bottomHeight = typedArray.getDimensionPixelOffset(R.styleable.TextDrawable_bottomDrawableHeight, dip2px(context, 20));
         }
     }
 
@@ -78,12 +86,15 @@ public class TextDrawable extends android.support.v7.widget.AppCompatTextView {
         if (drawableTop != null) {
             drawableTop.setBounds(0, 0, topWidth, topHeight);
         }
+        if (drawableBottom != null) {
+            drawableBottom.setBounds(0, 0, bottomWidth, bottomHeight);
+        }
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        this.setCompoundDrawables(drawableLeft, drawableTop, drawableRight, null);
+        this.setCompoundDrawables(drawableLeft, drawableTop, drawableRight, drawableBottom);
 
     }
 
@@ -122,16 +133,33 @@ public class TextDrawable extends android.support.v7.widget.AppCompatTextView {
     /**
      * 设置上部图片并重绘
      */
-    public void setDrawable(Drawable drawableTop) {
+    public void setDrawableTop(Drawable drawableTop) {
         this.drawableTop = drawableTop;
         invalidate();
     }
 
     /**
-     * 设置右侧图片并重绘
+     * 设置上部图片并重绘
      */
     public void setDrawableTop(int drawableTopRes) {
         this.drawableTop = mContext.getResources().getDrawable(drawableTopRes);
         invalidate();
     }
+
+    /**
+     * 设置下部图片并重绘
+     */
+    public void setDrawableBottom(Drawable drawableBottom) {
+        this.drawableBottom = drawableBottom;
+        invalidate();
+    }
+
+    /**
+     * 设置下部图片并重绘
+     */
+    public void setDrawableBottom(int drawableBottomRes) {
+        this.drawableBottom = mContext.getResources().getDrawable(drawableBottomRes);
+        invalidate();
+    }
+
 }

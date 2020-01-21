@@ -18,4 +18,9 @@
         app:leftDrawableHeight="20dp"
         app:leftDrawableWidth="20dp"/>
 
+    <com.ryx.widget.LabelsView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
 </android.support.constraint.ConstraintLayout>

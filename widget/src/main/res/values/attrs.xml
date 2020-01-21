@@ -15,7 +15,6 @@
         <attr name="gravity" format="integer" />
     </declare-styleable>
 
-
     <declare-styleable name="TextDrawable">
         <attr name="leftDrawable" format="reference" />
         <attr name="leftDrawableWidth" format="dimension" />
@@ -26,6 +25,9 @@
         <attr name="topDrawable" format="reference" />
         <attr name="topDrawableWidth" format="dimension" />
         <attr name="topDrawableHeight" format="dimension" />
+        <attr name="bottomDrawable" format="reference" />
+        <attr name="bottomDrawableWidth" format="dimension" />
+        <attr name="bottomDrawableHeight" format="dimension" />
     </declare-styleable>
 
 
