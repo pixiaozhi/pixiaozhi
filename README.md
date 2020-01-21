@@ -2,6 +2,7 @@
 1.0.0仅仅测试是否正常可以依赖（TextViewUtil）
 
 gradle依赖
+----
 
 Step 1.Add it in your root build.gradle at the end of repositories:
 
@@ -20,7 +21,9 @@ Step 2. Add the dependency
 ------------------------------------------------------------------------
 已上传文件（暂未打包发布）
 
-TextDrawable 可设置图片+文字的TextView，在布局文件中设置文字左边图宽高，同理可设置rightDrawable，topDrawable，bottomDrawable
+TextDrawable 
+----
+可设置图片+文字的TextView，在布局文件中设置文字左边图宽高，同理可设置rightDrawable，topDrawable，bottomDrawable
 
 	<com.ryx.widget.TextDrawable
         android:layout_width="match_parent"
@@ -30,7 +33,12 @@ TextDrawable 可设置图片+文字的TextView，在布局文件中设置文字�
         app:leftDrawableHeight="20dp"
         app:leftDrawableWidth="20dp"/>
 	
-标签列表控件。可以设置标签的选中效果。 可以设置标签的选中类型：不可选中、单选、限数量多选和不限数量多选等， 并支持设置必选项、单行显示、最大显示行数等功能。
+标签列表控件
+----
+可以设置标签的选中效果。 可以设置标签的选中类型：不可选中、单选、限数量多选和不限数量多选等， 并支持设置必选项、单行显示、最大显示行数等功能。
+
+xml使用：
+----
 
 	<com.ryx.widget.LabelsView
        android:id="@+id/labels"
@@ -59,6 +67,7 @@ TextDrawable 可设置图片+文字的TextView，在布局文件中设置文字�
 	app:singleLine="true"  // 单行显示，默认false
 	
 activity调用：
+----
 
 	LabelsView mLabels = new LabelsView(activity);
         mLabels.setSelectType(LabelsView.SelectType.SINGLE)//单选,可以反选。
